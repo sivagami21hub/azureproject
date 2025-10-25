@@ -1,0 +1,9 @@
+{
+	"name": "sivagamiadfproject242025",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "83cfe0ea-9b54-43f1-a3f5-26b3bd3d9a87",
+		"tenantId": "8cd835c6-f6e5-4511-802a-8b3154cd4eef"
+	}
+}
