@@ -146,10 +146,10 @@
 			"pp_container": {
 				"type": "string"
 			},
-			"pp_folder": {
+			"pp_inputfolder": {
 				"type": "string"
 			},
-			"pp_filename": {
+			"pp_outputfolder": {
 				"type": "string"
 			}
 		},
