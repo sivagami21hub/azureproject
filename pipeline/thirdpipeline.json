@@ -107,7 +107,7 @@
 											"type": "Expression"
 										},
 										"DS_folder": {
-											"value": "@pipeline().parameters.pp_folder",
+											"value": "@pipeline().parameters.pp_inputfolder",
 											"type": "Expression"
 										},
 										"DS_filename": {
@@ -127,7 +127,7 @@
 											"type": "Expression"
 										},
 										"DS_folder": {
-											"value": "@pipeline().parameters.pp_folder",
+											"value": "@pipeline().parameters.pp_outputfolder",
 											"type": "Expression"
 										},
 										"DS_filename": {
