@@ -123,8 +123,22 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "metadataset",
-									"type": "DatasetReference"
+									"referenceName": "parameterdataset",
+									"type": "DatasetReference",
+									"parameters": {
+										"DS_file_container": {
+											"value": "@pipeline().parameters.pp_container",
+											"type": "Expression"
+										},
+										"DS_folder": {
+											"value": "@concat(pipeline().parameters.pp_input_folder,'/text')",
+											"type": "Expression"
+										},
+										"DS_filename": {
+											"value": "@item().name",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
