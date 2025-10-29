@@ -40,12 +40,6 @@
 						"dependencyConditions": [
 							"Succeeded"
 						]
-					},
-					{
-						"activity": "csv filter",
-						"dependencyConditions": [
-							"Succeeded"
-						]
 					}
 				],
 				"userProperties": [],
@@ -164,29 +158,6 @@
 					},
 					"condition": {
 						"value": "@endswith(item().name,'.txt')",
-						"type": "Expression"
-					}
-				}
-			},
-			{
-				"name": "csv filter",
-				"type": "Filter",
-				"dependsOn": [
-					{
-						"activity": "text filter",
-						"dependencyConditions": [
-							"Failed"
-						]
-					}
-				],
-				"userProperties": [],
-				"typeProperties": {
-					"items": {
-						"value": "@activity('Get Metadata1').output.childItems",
-						"type": "Expression"
-					},
-					"condition": {
-						"value": "@endswith(item().name,'.csv')",
 						"type": "Expression"
 					}
 				}
