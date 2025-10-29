@@ -63,7 +63,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"expression": {
-									"value": "@activity('text filter').output",
+									"value": "@endswith(item().name,'.txt')",
 									"type": "Expression"
 								},
 								"ifFalseActivities": [
