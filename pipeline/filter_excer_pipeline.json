@@ -87,6 +87,12 @@
 						}
 					]
 				}
+			},
+			{
+				"name": "text filter",
+				"type": "Filter",
+				"dependsOn": [],
+				"userProperties": []
 			}
 		],
 		"parameters": {
