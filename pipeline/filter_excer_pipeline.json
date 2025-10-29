@@ -167,9 +167,9 @@
 				"type": "Filter",
 				"dependsOn": [
 					{
-						"activity": "text filter",
+						"activity": "Get Metadata1",
 						"dependencyConditions": [
-							"Failed"
+							"Succeeded"
 						]
 					}
 				],
