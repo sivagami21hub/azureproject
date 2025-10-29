@@ -263,7 +263,7 @@
 											"type": "Expression"
 										},
 										"DS_filename": {
-											"value": "@activity('csv filter').output",
+											"value": "@item().name",
 											"type": "Expression"
 										}
 									}
