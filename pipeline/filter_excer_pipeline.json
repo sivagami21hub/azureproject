@@ -129,7 +129,7 @@
 											"type": "Expression"
 										},
 										"DS_filename": {
-											"value": "@item().name",
+											"value": "@activity('text filter').output",
 											"type": "Expression"
 										}
 									}
