@@ -10,8 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "SalesCopyFile.txt",
-				"folderPath": "input",
+				"fileName": "sqltable.csv",
+				"folderPath": "output/sqlfolder",
 				"fileSystem": "adfproject"
 			},
 			"columnDelimiter": ",",
