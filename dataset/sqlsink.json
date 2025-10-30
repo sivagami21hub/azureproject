@@ -1,0 +1,29 @@
+{
+	"name": "sqlsink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "sqltable.csv",
+				"folderPath": "output/sqlfolder",
+				"fileSystem": "adfproject"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "s.no\tname\tcity",
+				"type": "String"
+			}
+		]
+	}
+}
