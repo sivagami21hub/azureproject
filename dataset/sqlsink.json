@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "sqltable.csv",
+				"fileName": "red.csv",
 				"folderPath": "output/sqlfolder",
 				"fileSystem": "adfproject"
 			},
