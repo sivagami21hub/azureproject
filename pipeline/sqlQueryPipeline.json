@@ -56,6 +56,16 @@
 				]
 			}
 		],
+		"parameters": {
+			"Tablename": {
+				"type": "string",
+				"defaultValue": "[SalesLT].[Product] "
+			},
+			"color": {
+				"type": "string",
+				"defaultValue": "Red"
+			}
+		},
 		"annotations": []
 	}
 }
