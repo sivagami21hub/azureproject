@@ -11,7 +11,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": "SalesLTProduct.csv",
-				"folderPath": "output/csvfile",
+				"folderPath": "input",
 				"fileSystem": "adfproject"
 			},
 			"columnDelimiter": "\t",
