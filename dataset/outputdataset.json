@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "Blue.txt",
+				"fileName": "SalesLTProduct.csv",
 				"folderPath": "output/storeProc",
 				"fileSystem": "adfproject"
 			},
