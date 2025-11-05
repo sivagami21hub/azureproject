@@ -11,7 +11,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": "Blue.txt",
-				"folderPath": "output",
+				"folderPath": "output/storeProc",
 				"fileSystem": "adfproject"
 			},
 			"columnDelimiter": ",",
