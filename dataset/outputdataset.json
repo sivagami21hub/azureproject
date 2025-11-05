@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "SalesNew.txt",
+				"fileName": "Blue.txt",
 				"folderPath": "output",
 				"fileSystem": "adfproject"
 			},
