@@ -21,7 +21,7 @@
 						"storedProcedureParameters": {
 							"Color": {
 								"type": "String",
-								"value": "Red"
+								"value": "Blue"
 							}
 						},
 						"queryTimeout": "02:00:00",
