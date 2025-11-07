@@ -86,7 +86,13 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Users/sivagamitwenty1@gmail.com/projects/csv_to_table_loader"
+					"notebookPath": "/Users/sivagamitwenty1@gmail.com/projects/csv_to_table_loader",
+					"baseParameters": {
+						"file_name": {
+							"value": "@pipeline().parameters.file_name",
+							"type": "Expression"
+						}
+					}
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureDatabricks1",
