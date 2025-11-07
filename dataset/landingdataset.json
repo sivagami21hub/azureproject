@@ -10,10 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": {
-					"value": "@dataset().ds_file_name",
-					"type": "Expression"
-				},
+				"fileName": "SalesLTProduct.txt",
 				"folderPath": "input/Landing",
 				"fileSystem": "adfproject"
 			},
