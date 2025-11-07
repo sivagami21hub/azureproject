@@ -50,13 +50,7 @@
 				"inputs": [
 					{
 						"referenceName": "landingdataset",
-						"type": "DatasetReference",
-						"parameters": {
-							"ds_file_name": {
-								"value": "@pipeline().parameters.file_name",
-								"type": "Expression"
-							}
-						}
+						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
