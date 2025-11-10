@@ -161,7 +161,7 @@
 									{
 										"type": "Query",
 										"text": {
-											"value": "INSERT INTO Audit_Table (File_Name, Status, Current_Timestamp)\nVALUES ('@{item().file_name}', 'Success', GETDATE());",
+											"value": "INSERT INTO Audit_Table (File_Name, Status)\nVALUES ('@{item().file_name}', 'Success');",
 											"type": "Expression"
 										}
 									}
