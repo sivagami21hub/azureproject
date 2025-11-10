@@ -71,12 +71,65 @@
 										"type": "DelimitedTextReadSettings"
 									}
 								},
-								"enableStaging": false
+								"sink": {
+									"type": "DelimitedTextSink",
+									"storeSettings": {
+										"type": "AzureBlobFSWriteSettings"
+									},
+									"formatSettings": {
+										"type": "DelimitedTextWriteSettings",
+										"quoteAllText": true,
+										"fileExtension": ".txt"
+									}
+								},
+								"enableStaging": false,
+								"translator": {
+									"type": "TabularTranslator",
+									"typeConversion": true,
+									"typeConversionSettings": {
+										"allowDataTruncation": true,
+										"treatBooleanAsNumber": false
+									}
+								}
 							},
 							"inputs": [
 								{
 									"referenceName": "parameterdataset",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"DS_file_container": {
+											"value": "@item().Source_Container",
+											"type": "Expression"
+										},
+										"DS_folder": {
+											"value": "@item().Source_Directory",
+											"type": "Expression"
+										},
+										"DS_filename": {
+											"value": "@item().file_name",
+											"type": "Expression"
+										}
+									}
+								}
+							],
+							"outputs": [
+								{
+									"referenceName": "parameterdataset",
+									"type": "DatasetReference",
+									"parameters": {
+										"DS_file_container": {
+											"value": "@item().Target_Container",
+											"type": "Expression"
+										},
+										"DS_folder": {
+											"value": "@item().Target_Directory",
+											"type": "Expression"
+										},
+										"DS_filename": {
+											"value": "@item().file_name",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
@@ -84,6 +137,17 @@
 				}
 			}
 		],
+		"parameters": {
+			"pp_container": {
+				"type": "string"
+			},
+			"pp_input_folder": {
+				"type": "string"
+			},
+			"pp_output_folder": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
