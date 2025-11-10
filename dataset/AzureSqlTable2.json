@@ -9,8 +9,8 @@
 		"type": "AzureSqlTable",
 		"schema": [],
 		"typeProperties": {
-			"schema": "SalesLT",
-			"table": "NewCopyFile"
+			"schema": "dbo",
+			"table": "Config_Table"
 		}
 	}
 }
