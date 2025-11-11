@@ -15,7 +15,7 @@
 				"fileSystem": "adfproject"
 			},
 			"columnDelimiter": ",",
-			"compressionCodec": null,
+			"compressionCodec": "deflate",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
