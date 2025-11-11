@@ -14,7 +14,7 @@
 				"folderPath": "Landing",
 				"fileSystem": "adfproject"
 			},
-			"columnDelimiter": "",
+			"columnDelimiter": "\t",
 			"compressionCodec": "ZipDeflate",
 			"compressionLevel": "Optimal",
 			"escapeChar": "\\",
