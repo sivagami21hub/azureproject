@@ -1,0 +1,41 @@
+{
+	"name": "AzureSqlTable3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Project",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Source_Container",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Source_Directory",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Target_Container",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Target_Directory",
+				"type": "nvarchar"
+			},
+			{
+				"name": "file_name",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Config_Table"
+		}
+	}
+}
