@@ -13,8 +13,9 @@
 				"folderPath": "input",
 				"fileSystem": "adfproject"
 			},
-			"columnDelimiter": ",",
-			"compressionCodec": "deflate",
+			"columnDelimiter": "\t",
+			"rowDelimiter": "\n",
+			"compressionCodec": null,
 			"compressionLevel": "Optimal",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
