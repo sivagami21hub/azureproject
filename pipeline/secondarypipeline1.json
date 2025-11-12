@@ -152,8 +152,8 @@
 							}
 						},
 						{
-							"name": "Copy data1",
-							"type": "Copy",
+							"name": "Script1",
+							"type": "Script",
 							"dependsOn": [
 								{
 									"activity": "Notebook1",
@@ -170,8 +170,21 @@
 								"secureInput": false
 							},
 							"userProperties": [],
+							"linkedServiceName": {
+								"referenceName": "AzureSqlDatabase1",
+								"type": "LinkedServiceReference"
+							},
 							"typeProperties": {
-								"enableStaging": false
+								"scripts": [
+									{
+										"type": "Query",
+										"text": {
+											"value": "INSERT INTO Audit_Table (File_Name, Status)\nVALUES ('@{item().file_name}', 'Success');",
+											"type": "Expression"
+										}
+									}
+								],
+								"scriptBlockExecutionTimeout": "02:00:00"
 							}
 						}
 					]
