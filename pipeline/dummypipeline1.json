@@ -17,6 +17,7 @@
 				"typeProperties": {
 					"source": {
 						"type": "AzureSqlSource",
+						"sqlReaderQuery": "select * from Config_Table where Project='SalesLT'",
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
