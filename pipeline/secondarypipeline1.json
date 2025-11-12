@@ -113,8 +113,22 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "inputdataset",
-									"type": "DatasetReference"
+									"referenceName": "parameterdataset",
+									"type": "DatasetReference",
+									"parameters": {
+										"DS_file_container": {
+											"value": "@item().Target_Container",
+											"type": "Expression"
+										},
+										"DS_folder": {
+											"value": "@concat(item().Target_Directory,'/bronze')",
+											"type": "Expression"
+										},
+										"DS_filename": {
+											"value": "@item().fila_name",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						},
