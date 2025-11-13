@@ -13,7 +13,7 @@
 				"folderPath": "input",
 				"fileSystem": "adfproject"
 			},
-			"columnDelimiter": "\t",
+			"columnDelimiter": ",",
 			"rowDelimiter": "\n",
 			"compressionCodec": null,
 			"compressionLevel": "Optimal",
