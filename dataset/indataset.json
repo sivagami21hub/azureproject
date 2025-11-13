@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "input",
+				"folderPath": "input/unzip",
 				"fileSystem": "adfproject"
 			},
 			"columnDelimiter": ",",
