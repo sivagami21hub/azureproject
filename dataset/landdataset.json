@@ -11,7 +11,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": "SalesLTProductModel.zip",
-				"folderPath": "Landing",
+				"folderPath": "input",
 				"fileSystem": "adfproject"
 			},
 			"columnDelimiter": "\t",
