@@ -153,7 +153,7 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
-								"notebookPath": "/Users/sivagamitwenty1@gmail.com/bronzetotable",
+								"notebookPath": "/Users/sivagamitwenty1@gmail.com/projects/bronzetotable",
 								"baseParameters": {
 									"file_name": {
 										"value": "@item().file_name",
