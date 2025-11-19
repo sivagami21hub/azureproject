@@ -136,7 +136,11 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('Get Metadata1').output",
+						"value": "@activity('Get Metadata1').output.childItemsactivity('Get Metadata1').output.childItemsactivity('Get Metadata1').output",
+						"type": "Expression"
+					},
+					"condition": {
+						"value": "@endswith(item().name,'.txt')",
 						"type": "Expression"
 					}
 				}
